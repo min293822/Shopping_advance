@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  {% for cartitem in cartitems %}
+  <div class="cont">
+  <div class="name">{{cartitem.product.name}}</div>
+  <div class="quantity">{{cartitem.quantity}}</div>
+  <div class="price">$ {{cartitem.product.price}}</div>
+  <div class="each_total">$ {{cartitem.each_total}}</div>
+  </div>
+  
+  {% endfor %}
+  
+  <div class="payment">
+    <div class="total">$ {{cart.total}}</div>
+    <button>Pay</button>
+  </div>
+  
+</div>
+
+{% endblock %}

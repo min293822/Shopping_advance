@@ -1,0 +1,16 @@
+*{
+  margin: 10px;
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.container .cont{
+  display: flex;
+  justify-content: space-evenly;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}

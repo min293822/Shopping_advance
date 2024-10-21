@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+{% for product in products %}
+<div class="product_con">
+
+  <div class="image">
+    <img src="{{product.image.url}}" alt="{{product.name}}">
+  </div>
+  <div class="product_body">
+    
+    <div class="name">{{product.name}}</div>
+    <div class="price">$ {{product.price}}</div>
+    <button value="{{product.id}}" class="cartbtn">Add to Cart</button>
+  </div>
+</div>
+  {% endfor %}
+</div>
+
+  
+{% endblock %}
